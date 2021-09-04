@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.MainActivity">
+
+  <TextView
+
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/curve_bg"
+      android:gravity="center"
+      android:paddingStart="@dimen/_40sdp"
+      android:paddingTop="@dimen/_10sdp"
+      android:paddingEnd="@dimen/_40sdp"
+      android:paddingBottom="@dimen/_40sdp"
+      android:text="Sign Up"
+      android:textColor="@color/white"
+      android:textSize="@dimen/_20sdp"
+      android:textStyle="normal" />
+
+  <RelativeLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="@dimen/_55sdp"
+      android:layout_marginEnd="10dp"
+      android:background="@drawable/round_sheet_bg"
+      android:elevation="@dimen/_5sdp"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Account Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSignup"
+        android:layout_centerHorizontal="true">
+
+      <LinearLayout
+
+          android:id="@+id/layContent"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_18sdp"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Full Name"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_12sdp" />
+
+          <EditText
+              android:id="@+id/edtName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:backgroundTint="@color/black"
+              android:hint="Alon Musk"
+              android:inputType="text"
+              android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Email"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_12sdp" />
+
+          <EditText
+              android:id="@+id/edtEmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:backgroundTint="@color/black"
+              android:enabled="false"
+              android:hint="alon@soacex.com"
+              android:inputType="textEmailAddress"
+              android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Age (Year)"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_12sdp" />
+
+          <EditText
+              android:id="@+id/edtAge"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:backgroundTint="@color/black"
+              android:hint="30"
+              android:inputType="numberDecimal"
+              android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Gender"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_12sdp" />
+
+          <RadioGroup
+              android:id="@+id/radioGrpGender"
+              style="@style/MyRadioButton"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:backgroundTint="@color/black"
+              android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <RadioButton
+                android:id="@+id/radioBtnFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+          </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Zila"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_12sdp" />
+
+          <EditText
+              android:id="@+id/edtZila"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:backgroundTint="@color/black"
+              android:hint="Siliguri"
+              android:inputType="text"
+              android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Phone"
+              android:textColor="@color/black"
+              android:textSize="@dimen/_12sdp" />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical">
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:textSize="@dimen/_12sdp" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@drawable/button_signup"
+            android:text="Signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+
+      </LinearLayout>
+
+    </ScrollView>
+
+
+  </RelativeLayout>
+
+
+</RelativeLayout>

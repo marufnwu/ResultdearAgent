@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.UserListActivity">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_bg"
+        android:gravity="center"
+        android:paddingStart="@dimen/_40sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_40sdp"
+        android:paddingBottom="@dimen/_40sdp"
+        android:text="Refer Users"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"/>
+
+
+    <LinearLayout
+        android:background="@drawable/round_gray_bg"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/rvReferList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

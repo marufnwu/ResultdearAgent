@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="@dimen/_6sdp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:weightSum="6"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvAvatar"
+        android:layout_weight="1"
+        android:src="@drawable/man"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_60sdp"/>
+
+    <LinearLayout
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvName"
+            android:textColor="@color/nan_lite"
+            android:textSize="@dimen/_15sdp"
+            android:text="Name Of User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:textSize="@dimen/_12sdp"
+            android:text="user@email.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btInfo"
+        android:textColor="@color/white"
+        android:background="@drawable/round_bg_nan"
+        android:text="info"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

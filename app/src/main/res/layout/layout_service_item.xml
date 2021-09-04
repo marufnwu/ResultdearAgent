@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:background="@drawable/round_bg_lime"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/_50sdp">
+
+    <LinearLayout
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="4.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:text="Pro"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:text="Rs. 500"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvExpire"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:text="Expire\n12-12-20"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingEnd="@dimen/_3sdp"
+                android:paddingStart="@dimen/_3sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/tvStatus"
+                android:textColor="@color/white"
+                android:background="@drawable/round_bg_nan"
+                android:text="Active Now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

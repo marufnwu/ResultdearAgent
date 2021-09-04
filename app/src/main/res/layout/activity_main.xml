@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.MainActivity">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_bg"
+        android:gravity="center"
+        android:paddingStart="@dimen/_40sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_40sdp"
+        android:paddingBottom="@dimen/_40sdp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="normal" />
+
+
+    <LinearLayout
+        android:background="@drawable/round_gray_bg"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_bg_lime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="@dimen/_8sdp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/white"
+                        android:text="Your Refer Code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_18sdp"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@drawable/round_gray_bg"
+                            android:text="DGFT85"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:visibility="gone"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/button_signup"
+                            android:layout_margin="@dimen/_3sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:text="COPY"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="@dimen/_8sdp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/llClaim"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:background="@drawable/round_bg_orange"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/_100sdp">
+                        <ImageView
+                            android:layout_margin="@dimen/_3sdp"
+                            android:src="@drawable/claim"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/_3sdp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_18sdp"
+                                android:text="452"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:textSize="@dimen/_15sdp"
+                                android:textColor="@color/white"
+                                android:text="Claim"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llReferUser"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:background="@drawable/round_bg_nan"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:layout_height="@dimen/_100sdp">
+                        <ImageView
+                            android:layout_margin="@dimen/_3sdp"
+                            android:src="@drawable/team"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"/>
+
+                        <LinearLayout
+                            android:layout_margin="@dimen/_3sdp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_18sdp"
+                                android:text="30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:textSize="@dimen/_15sdp"
+                                android:textColor="@color/white"
+                                android:text="Refer User"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/round_sheet_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
