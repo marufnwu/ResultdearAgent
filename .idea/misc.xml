@@ -20,9 +20,11 @@
         <entry key="..\:/ResultdearAgent/app/src/main/res/layout/activity_signup.xml" value="0.1734375" />
         <entry key="..\:/ResultdearAgent/app/src/main/res/layout/activity_user_list.xml" value="0.1734375" />
         <entry key="..\:/ResultdearAgent/app/src/main/res/layout/custom_loading_dialog_layout.xml" value="0.1734375" />
+        <entry key="..\:/ResultdearAgent/app/src/main/res/layout/dialog_package_list.xml" value="0.16875" />
         <entry key="..\:/ResultdearAgent/app/src/main/res/layout/dialog_user_info.xml" value="0.1734375" />
         <entry key="..\:/ResultdearAgent/app/src/main/res/layout/layout_service_item.xml" value="0.1734375" />
         <entry key="..\:/ResultdearAgent/app/src/main/res/layout/layout_user_list.xml" value="0.1734375" />
+        <entry key="..\:/ResultdearAgent/app/src/main/res/layout/package_item.xml" value="0.16875" />
       </map>
     </option>
   </component>

@@ -1,9 +1,7 @@
 package com.skithub.resultdear.agent.utils.api
 
 import com.skithub.resultdear.agent.model.UserLogin
-import com.skithub.resultdear.agent.model.response.PlanListResponse
-import com.skithub.resultdear.agent.model.response.ReferUserResponse
-import com.skithub.resultdear.agent.model.response.ServerResponse
+import com.skithub.resultdear.agent.model.response.*
 import io.reactivex.rxjava3.core.Single
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
@@ -35,5 +33,25 @@ interface IRetrofitApiCall {
     fun getUserPlan(
         @Field("userId") name:String
     ): Single<PlanListResponse>
+
+
+    @FormUrlEncoded
+    @POST("user.getPlanPackages.php")
+    fun getPlanPackages(
+        @Field("planId") planId:String
+    ): Single<PlanPackagesResponse>
+
+    @FormUrlEncoded
+    @POST("account.getPlanTransaction.php")
+    fun getPlanTransaction(
+        @Field("userId") userId:String,
+        @Field("packageId") packageId:String,
+    ): Single<PlanTransactionResponse>
+
+    @FormUrlEncoded
+    @POST("user.upiCallback.php")
+    fun upiCallback(
+        @Field("tranRef") tranRef:String,
+    ): Single<ServerResponse>
 
 }

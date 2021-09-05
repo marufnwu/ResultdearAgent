@@ -20,7 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:gravity="center_vertical"
+                android:gravity="center_vertical|center_horizontal"
                 android:weightSum="3"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -37,6 +37,7 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
+                    android:visibility="gone"
                     android:id="@+id/tvPrice"
                     android:gravity="center"
                     android:layout_margin="@dimen/_3sdp"

@@ -10,9 +10,9 @@ import com.skithub.resultdear.agent.R
 import com.skithub.resultdear.agent.databinding.LayoutServiceItemBinding
 import com.skithub.resultdear.agent.view.activities.UserListActivity
 
-class ServiceItemAdapter (val serviceItemList: List<UserListActivity.ServiceItem>,val context:Context) : RecyclerView.Adapter<ServiceItemAdapter.MyViewHolder>() {
+class ServiceItemAdapter (public val serviceItemList: List<UserListActivity.ServiceItem>,val context:Context) : RecyclerView.Adapter<ServiceItemAdapter.MyViewHolder>() {
 
-
+    var onItemClickListener : ((UserListActivity.ServiceItem)->Unit)? = null
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -26,14 +26,18 @@ class ServiceItemAdapter (val serviceItemList: List<UserListActivity.ServiceItem
         val serviceItem : UserListActivity.ServiceItem = serviceItemList.get(position)
         holder.tvName.text = serviceItem.name
         holder.tvPrice.text = "Rs. ${serviceItem.price}"
-
+        holder.tvStatus.text = "Packs"
         if(serviceItem.active==1){
-            holder.tvStatus.text = "Activated"
+
             holder.tvStatus.background = ContextCompat.getDrawable(context, R.drawable.round_bg_nan)
             if(serviceItem.expire!=null){
-                holder.tvExpire.text = "Expire\n${serviceItem.expire}"
+                holder.tvExpire.text = "Expire At\n${serviceItem.expire}"
             }else{
                 holder.tvExpire.text = "N/A"
+            }
+
+            holder.tvStatus.setOnClickListener {
+                onItemClickListener?.invoke(serviceItem)
             }
         }else{
             holder.tvExpire.text = "N/A"
@@ -50,5 +54,6 @@ class ServiceItemAdapter (val serviceItemList: List<UserListActivity.ServiceItem
         val tvPrice = itemView.tvPrice
         val tvExpire = itemView.tvExpire
         val tvStatus = itemView.tvStatus
+
     }
 }
